@@ -1,0 +1,59 @@
+@keyframes color-change
+{
+    from {background-color: white;}
+    to {background-color: turquoise;}
+}
+
+body
+{
+    background-image: linear-gradient(to right,grey,white,grey);
+    text-align: center;
+    display: block;
+}
+
+#bar
+{
+    box-sizing: border-box;
+    border: 5px solid blue;
+    background-image: linear-gradient(to right,teal,white,teal);
+    margin-bottom: 10px;
+    /*
+    animation-name: exemple;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;*/
+}
+
+#booker
+{
+    box-sizing: border-box;
+    border: 5px solid red;
+    background-image: linear-gradient(to right,orange,white,orange);
+    margin-bottom: 10px;
+}
+
+input
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 90%;
+    text-align: center;
+}
+
+#actors
+{
+    box-sizing: border-box;
+    border: 5px solid greenyellow;
+    background-image: linear-gradient(to right,green,white,green);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+button
+{
+    width: 100%;
+    height: 3em;
+    animation-name: color-change;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

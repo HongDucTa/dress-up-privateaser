@@ -2,18 +2,28 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with Privateaser</title>
+    <link rel="stylesheet" href="index.css"></link>
   </head>
   <body>
+    <h1>Create a new event</h1>
     <div id="bar">
       <input class="name" type="text" placeholder="Bar name"/>
+      <br/>
       <input class="price-by-hour" type="number" placeholder="Price by hour"/>
+      <br/>
       <input class="price-by-person" type="number" placeholder="Price by person"/>
+      <br/>
     </div>
     <div id="booker">
       <input class="name" type="text" placeholder="Booker name"/>
-      <input class="time" type="number" placeholder="Time in h"/>
+      <br/>
+      <input class="time" type="number" placeholder="Time in hours"/>
+      <br/>
       <input class="persons" type="number" placeholder="Persons"/>
+      <br/>
+      Deductible option
       <input class="option" type="checkbox" placeholder="Deductible option"/>
+      <br/>
     </div>
     <button id="compute">Compute</button>
     <div id="actors"></div>
