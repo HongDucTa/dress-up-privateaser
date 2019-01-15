@@ -1,7 +1,13 @@
-@keyframes color-change
+@keyframes color-change-button
+{
+    from {background-color: rgb(81,165,238);color: white;}
+    to {background-color: rgb(250, 79, 79);color: black;}
+}
+
+@keyframes color-change-black-white
 {
     from {background-color: white;}
-    to {background-color: rgb(81,165,238);}
+    to {background-color: black;}
 }
 
 @keyframes block-move
@@ -10,91 +16,155 @@
     to {margin-left: 95%;}
 }
 
+@keyframes background-white-red
+{
+    from {
+        background-color: rgb(81,165,238);
+    }
+    to {
+        background-color: rgb(250, 79, 79);
+
+    }
+}
+
+@keyframes background-and-color-white-red
+{
+    from {
+        background-color: white;
+        color: rgb(81,165,238);
+    }
+    to {
+        background-color: black;
+        color:rgb(250, 79, 79);
+
+    }
+}
+
+@keyframes day-night
+{
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
 .barre
 {
-    background-color: grey;
+    background-color: rgb(81,165,238);
+    height: 20px;
+    animation-name: background-white-red;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .square
 {
     width: 30px;
     height: 30px;
-    background-image: linear-gradient(to right,black,red,black);
+    background-color: white;
     margin-bottom: 5px;
-    /*
     animation-name: block-move;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
-    */
 }
 
 body
 {
-    background-image: white;
     text-align: center;
     display: block;
+    animation-name: color-change-black-white;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #bar
 {
-    background-color: rgb(81,165,238);
     margin-bottom: 10px;
-    /*
-    animation-name: exemple;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;*/
+    animation-name: background-white-red;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #booker
 {
-    background-color: rgb(81,165,238);
     margin-bottom: 10px;
+    animation-name: background-white-red;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 input
 {
-    box-sizing: border-box;
-    border: 5px solid rgb(81, 165, 238);
     margin-top: 5px;
     margin-bottom: 5px;
-    width: 100%;
+    width: 95%;
     text-align: left;
+    animation-name: background-and-color-white-red;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #actors
 {
-    box-sizing: border-box;
-    border: 5px solid rgb(81,165,238);
-    background-color: rgb(230, 236, 236);
     margin-top: 5px;
     margin-bottom: 5px;
+    animation-name: background-and-color-white-red;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 button
 {
     width: 100%;
     height: 3em;
-    animation-name: color-change;
-    animation-duration: 1s;
+    animation-name: color-change-button;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-timing-function: linear;
 }
 
 h2
 {
-    color: rgb(81, 165, 238);
-    background-color: white;
     margin-top: 0px;
     width: 100%;
     text-align: center;
+    animation-name: background-and-color-white-red;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 h1
 {
-    box-sizing: border-box;
-    border: 5px solid rgb(81,165,238);
-    color: rgb(81,165,238);
+    animation-name: background-and-color-white-red;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+img
+{
+    height: 100px;
+}
+
+#sun
+{
+    animation-name: day-night;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#moon
+{
+    animation-name: day-night;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
